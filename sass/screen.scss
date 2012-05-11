@@ -1,0 +1,47 @@
+@import "compass";
+@import "compass/reset";
+
+body {
+    background: #333;
+    color: #CCC;
+    font-family: 'Consolas', 'Menlo', 'Monaco', 'Droid Sans Mono', 'Ubuntu Mono', 'Andale Mono', monospace;
+    margin: 100px;
+}
+
+h1 {
+    color: #FFF;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+ul, p {
+    margin: 1em 0;
+}
+
+a {
+    color: #999;
+    text-decoration: none;
+}
+
+#people {
+    @include clearfix;
+    
+    li {
+        @include float(left);
+        padding-left: 0.5em;
+        
+        &:before {
+            content: "&";
+            padding-right: 0.5em;
+        }
+        
+        &:first-child {
+            padding-left: 0;
+            
+            &:before {
+                content: "";
+                padding-right: 0;
+            }
+        }
+    }
+}
