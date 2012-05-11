@@ -68,7 +68,7 @@ body {
   background: #333;
   color: #CCC;
   font-family: 'Consolas', 'Menlo', 'Monaco', 'Droid Sans Mono', 'Ubuntu Mono', 'Andale Mono', monospace;
-  margin: 100px;
+  margin: 100px 20px;
   -webkit-perspective: 500;
   perspective: 500;
   text-align: center;
