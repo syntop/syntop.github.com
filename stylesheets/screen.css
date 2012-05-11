@@ -69,48 +69,71 @@ body {
   color: #CCC;
   font-family: 'Consolas', 'Menlo', 'Monaco', 'Droid Sans Mono', 'Ubuntu Mono', 'Andale Mono', monospace;
   margin: 100px;
+  -webkit-perspective: 500;
+  perspective: 500;
+  text-align: center;
 }
 
-/* line 11, ../sass/screen.scss */
+/* line 13, ../sass/screen.scss */
 h1 {
   color: #FFF;
   font-size: 2em;
   font-weight: bold;
 }
 
-/* line 17, ../sass/screen.scss */
+/* line 19, ../sass/screen.scss */
 ul, p {
   margin: 1em 0;
 }
 
-/* line 21, ../sass/screen.scss */
+/* line 23, ../sass/screen.scss */
 a {
-  color: #999;
   text-decoration: none;
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -ms-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+  transition: color 0.5s ease-in-out;
+}
+/* line 24, ../sass/screen.scss */
+a:link, a:visited, a:active {
+  color: #999;
+}
+/* line 31, ../sass/screen.scss */
+a:hover {
+  color: #FFF;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 #people {
+  margin: 0;
+  padding: 0;
+  border: 0;
   overflow: hidden;
   *zoom: 1;
+  margin-top: 1em;
 }
-/* line 29, ../sass/screen.scss */
+/* line 49, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
 #people li {
-  display: inline;
-  float: left;
-  padding-left: 0.5em;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  white-space: nowrap;
 }
-/* line 33, ../sass/screen.scss */
-#people li:before {
-  content: "&";
-  padding-right: 0.5em;
-}
-/* line 38, ../sass/screen.scss */
-#people li:first-child {
-  padding-left: 0;
+/* line 7, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+#people li {
+  *display: inline;
 }
 /* line 41, ../sass/screen.scss */
+#people li:before {
+  content: "& ";
+}
+/* line 46, ../sass/screen.scss */
 #people li:first-child:before {
   content: "";
-  padding-right: 0;
 }

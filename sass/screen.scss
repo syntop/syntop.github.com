@@ -6,6 +6,8 @@ body {
     color: #CCC;
     font-family: 'Consolas', 'Menlo', 'Monaco', 'Droid Sans Mono', 'Ubuntu Mono', 'Andale Mono', monospace;
     margin: 100px;
+    @include perspective(500);
+    text-align: center;
 }
 
 h1 {
@@ -19,28 +21,30 @@ ul, p {
 }
 
 a {
-    color: #999;
+    &:link, &:visited, &:active {
+        color: #999;
+    }
+    
     text-decoration: none;
+    @include single-transition(color, .5s, ease-in-out);
+    
+    &:hover {
+        color: #FFF;
+    }
 }
 
 #people {
-    @include clearfix;
+    @include inline-block-list;
+    margin-top: 1em;
     
     li {
-        @include float(left);
-        padding-left: 0.5em;
-        
         &:before {
-            content: "&";
-            padding-right: 0.5em;
+            content: "& ";
         }
         
         &:first-child {
-            padding-left: 0;
-            
             &:before {
                 content: "";
-                padding-right: 0;
             }
         }
     }
