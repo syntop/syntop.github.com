@@ -1,0 +1,11 @@
+# syntop
+
+PROJECT_NAME = "syntop"
+
+run "cd ~/Sites/#{PROJECT_NAME}"
+run "foreman start"
+  
+pane do
+  run "cd ~/Sites/#{PROJECT_NAME}"
+  run "ls"
+end
