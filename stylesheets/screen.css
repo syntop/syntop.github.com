@@ -67,73 +67,72 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 body {
   background: #333;
   color: #CCC;
-  font-family: 'Consolas', 'Menlo', 'Monaco', 'Droid Sans Mono', 'Ubuntu Mono', 'Andale Mono', monospace;
+  font-family: Lato, sans-serif;
+  font-weight: 300;
   margin: 100px 20px;
   -webkit-perspective: 500;
   perspective: 500;
   text-align: center;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
 h1 {
   color: #FFF;
-  font-size: 2em;
-  font-weight: bold;
+  font-family: Quicksand, serif;
+  font-weight: 300;
+  font-size: 400%;
+  line-height: 6em;
+  letter-spacing: 2px;
+  text-rendering: optimizeLegibility;
+  width: 6em;
+  height: 6em;
+  border: 1px solid #FFF;
+  margin: 0 auto;
+  -webkit-border-radius: 5em;
+  -moz-border-radius: 5em;
+  -ms-border-radius: 5em;
+  -o-border-radius: 5em;
+  border-radius: 5em;
+  -webkit-transition-property: -webkit-transform, background-color;
+  -moz-transition-property: -webkit-transform, background-color;
+  -ms-transition-property: -webkit-transform, background-color;
+  -o-transition-property: -webkit-transform, background-color;
+  transition-property: -webkit-transform background-color;
+  -webkit-transition-duration: 5000ms;
+  -moz-transition-duration: 5000ms;
+  -ms-transition-duration: 5000ms;
+  -o-transition-duration: 5000ms;
+  transition-duration: 5000ms;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -ms-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+  -webkit-backface-visibility: hidden;
+}
+/* line 32, ../sass/screen.scss */
+h1:hover {
+  -webkit-transform: rotateY(-180deg) rotateX(20deg) scale(0.8);
+  -moz-transform: rotateY(-180deg) rotateX(20deg) scale(0.8);
+  -ms-transform: rotateY(-180deg) rotateX(20deg) scale(0.8);
+  -o-transform: rotateY(-180deg) rotateX(20deg) scale(0.8);
+  transform: rotateY(-180deg) rotateX(20deg) scale(0.8);
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 ul, p {
   margin: 1em 0;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 a {
   text-decoration: none;
-  -webkit-transition: color 0.5s ease-in-out;
-  -moz-transition: color 0.5s ease-in-out;
-  -ms-transition: color 0.5s ease-in-out;
-  -o-transition: color 0.5s ease-in-out;
-  transition: color 0.5s ease-in-out;
 }
-/* line 24, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 a:link, a:visited, a:active {
   color: #999;
 }
-/* line 31, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 a:hover {
   color: #FFF;
-}
-
-/* line 36, ../sass/screen.scss */
-#people {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  overflow: hidden;
-  *zoom: 1;
-  margin-top: 1em;
-}
-/* line 49, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/typography/lists/_inline-block-list.scss */
-#people li {
-  list-style-image: none;
-  list-style-type: none;
-  margin-left: 0;
-  display: -moz-inline-box;
-  -moz-box-orient: vertical;
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  white-space: nowrap;
-}
-/* line 7, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
-#people li {
-  *display: inline;
-}
-/* line 41, ../sass/screen.scss */
-#people li:before {
-  content: "& ";
-}
-/* line 46, ../sass/screen.scss */
-#people li:first-child:before {
-  content: "";
 }

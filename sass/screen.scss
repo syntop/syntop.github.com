@@ -4,7 +4,8 @@
 body {
     background: #333;
     color: #CCC;
-    font-family: 'Consolas', 'Menlo', 'Monaco', 'Droid Sans Mono', 'Ubuntu Mono', 'Andale Mono', monospace;
+    font-family: Lato, sans-serif;
+    font-weight: 300;
     margin: 100px 20px;
     @include perspective(500);
     text-align: center;
@@ -12,8 +13,25 @@ body {
 
 h1 {
     color: #FFF;
-    font-size: 2em;
-    font-weight: bold;
+    font-family: Quicksand, serif;
+    font-weight: 300;
+    font-size: 400%;
+    line-height: 6em;
+    letter-spacing: 2px;
+    text-rendering: optimizeLegibility;
+    width: 6em;
+    height: 6em;
+    border: 1px solid #FFF;
+    margin: 0 auto;
+    @include border-radius(5em);
+    @include transition-property(-webkit-transform background-color);
+    @include transition-duration(5000ms);
+    @include transition-timing-function(ease-in-out);
+    -webkit-backface-visibility: hidden;
+    
+    &:hover {
+        @include transform(rotateY(-180deg) rotateX(20deg) scale(0.8));
+    }
 }
 
 ul, p {
@@ -26,26 +44,8 @@ a {
     }
     
     text-decoration: none;
-    @include single-transition(color, .5s, ease-in-out);
     
     &:hover {
         color: #FFF;
-    }
-}
-
-#people {
-    @include inline-block-list;
-    margin-top: 1em;
-    
-    li {
-        &:before {
-            content: "& ";
-        }
-        
-        &:first-child {
-            &:before {
-                content: "";
-            }
-        }
     }
 }
