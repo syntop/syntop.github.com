@@ -4,13 +4,12 @@
 $default-text-shadow-color: rgba(#000, 0.3);
 $default-text-shadow-h-offset: 0px;
 $default-text-shadow-v-offset: 1px;
-$default-text-shadow-blur: 0px;
+$default-text-shadow-blur: 1px;
 
 $default-box-shadow-color: rgba(#000, 0.3);
 $default-box-shadow-h-offset: 0px;
 $default-box-shadow-v-offset: 1px;
-$default-box-shadow-blur: 0px;
-
+$default-box-shadow-blur: 1px;
 
 
 body {
@@ -20,6 +19,11 @@ body {
     font-weight: 300;
     @include perspective(500);
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
 }
 
 #identity {
@@ -45,10 +49,6 @@ body {
         height: 100%;
         border: 1px solid #FFF;
         @include border-radius(3em);
-        @include transition-property(-webkit-transform);
-        @include transition-duration(1000ms);
-        @include transition-timing-function(ease-in-out);
-        @include backface-visibility(hidden);
         @include text-shadow;
         @include box-shadow(
             $default-box-shadow-color $default-box-shadow-h-offset $default-box-shadow-v-offset,
@@ -62,47 +62,6 @@ body {
         line-height: 6em;
         letter-spacing: 2px;
         text-rendering: optimizeLegibility;
-    }
-    
-    #back {
-        @include transform3d(rotateY(180deg));
-    }
-    
-    &:hover {
-        #front {
-            @include transform3d(rotateY(-180deg)); // rotateX(-20deg) rotateZ(10deg) scale(0.9));
-        }
-        
-        #back {
-            @include transform3d(rotateY(0)); // rotateX(20deg) rotateZ(-10deg) scale(0.9));
-        }
-    }
-}
-
-#people, #contact {
-    font-size: 33%;
-    line-height: 1.3;
-    font-weight: 700;
-}
-
-#people {
-    margin-top: 8em;
-}
-
-#contact {
-    margin-top: 1em;
-}
-
-
-a {
-    &:link, &:visited, &:active {
-        color: #FFF;
-    }
-    
-    text-decoration: none;
-    
-    &:hover {
-        color: #CCC;
     }
 }
 

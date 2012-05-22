@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 16, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 body {
   background: #333;
   color: #CCC;
@@ -74,7 +74,13 @@ body {
   text-align: center;
 }
 
-/* line 25, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: #FFF;
+}
+
+/* line 29, ../sass/screen.scss */
 #identity {
   position: absolute;
   width: 6em;
@@ -87,7 +93,7 @@ body {
   margin-left: -3em;
   color: #FFF;
 }
-/* line 40, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 #identity .face {
   position: absolute;
   top: 0;
@@ -100,24 +106,7 @@ body {
   -ms-border-radius: 3em;
   -o-border-radius: 3em;
   border-radius: 3em;
-  -webkit-transition-property: -webkit-transform;
-  -moz-transition-property: -webkit-transform;
-  -ms-transition-property: -webkit-transform;
-  -o-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  -webkit-transition-duration: 1000ms;
-  -moz-transition-duration: 1000ms;
-  -ms-transition-duration: 1000ms;
-  -o-transition-duration: 1000ms;
-  transition-duration: 1000ms;
-  -webkit-transition-timing-function: ease-in-out;
-  -moz-transition-timing-function: ease-in-out;
-  -ms-transition-timing-function: ease-in-out;
-  -o-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 0px;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px, rgba(0, 0, 0, 0.3) 0px 0px inset;
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px, rgba(0, 0, 0, 0.3) 0px 0px inset;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px, rgba(0, 0, 0, 0.3) 0px 0px inset;
@@ -129,51 +118,6 @@ body {
   line-height: 6em;
   letter-spacing: 2px;
   text-rendering: optimizeLegibility;
-}
-/* line 67, ../sass/screen.scss */
-#identity #back {
-  -webkit-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-}
-/* line 72, ../sass/screen.scss */
-#identity:hover #front {
-  -webkit-transform: rotateY(-180deg);
-  transform: rotateY(-180deg);
-}
-/* line 76, ../sass/screen.scss */
-#identity:hover #back {
-  -webkit-transform: rotateY(0);
-  transform: rotateY(0);
-}
-
-/* line 82, ../sass/screen.scss */
-#people, #contact {
-  font-size: 33%;
-  line-height: 1.3;
-  font-weight: 700;
-}
-
-/* line 88, ../sass/screen.scss */
-#people {
-  margin-top: 8em;
-}
-
-/* line 92, ../sass/screen.scss */
-#contact {
-  margin-top: 1em;
-}
-
-/* line 97, ../sass/screen.scss */
-a {
-  text-decoration: none;
-}
-/* line 98, ../sass/screen.scss */
-a:link, a:visited, a:active {
-  color: #FFF;
-}
-/* line 104, ../sass/screen.scss */
-a:hover {
-  color: #CCC;
 }
 
 /* line 38, ../sass/_slideshow.scss */
@@ -244,7 +188,7 @@ body {
   -o-animation: titleAnimation 42s linear infinite 0s;
   animation: titleAnimation 42s linear infinite 0s;
   font-size: 18px;
-  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 0px;
+  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
 }
 /* line 101, ../sass/_slideshow.scss */
 #slideshow li:nth-child(1) span {
