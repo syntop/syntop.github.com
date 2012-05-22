@@ -4,15 +4,6 @@
 
   exports = window;
 
-  $(function() {
-    var h, path, w;
-    w = 386;
-    h = 386;
-    exports.paper = Raphael('paper', w, h);
-    return path = paper.path("        M" + (w / 2) + ",0        Q0,0,0," + (h / 2) + "        Q0," + h + "," + (w / 2) + "," + h + "        Q" + w + "," + h + "," + w + "," + (h / 2) + "        Q" + w + ",0," + (w / 2) + ",0            ").attr({
-      'stroke': '#FFF',
-      'stroke-width': 1
-    });
-  });
+  $(function() {});
 
 }).call(this);

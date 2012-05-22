@@ -1,0 +1,156 @@
+@mixin animation($animation-1: default, $animation-2: false, $animation-3: false, $animation-4: false, $animation-5: false, $animation-6: false, $animation-7: false, $animation-8: false, $animation-9: false, $animation-10: false) {
+    @if $animation-1 == default {
+        $animation-1: compact($default-animation-property, $default-animation-duration, $default-animation-function, $default-animation-delay); 
+    }
+    $animation: compact($animation-1, $animation-2, $animation-3, $animation-4, $animation-5, $animation-6, $animation-7, $animation-8, $animation-9, $animation-10);
+    @include build-prefix-values(animation, $animation); 
+}
+
+@mixin animation-delay($delay) {
+    @include build-prefix-values(animation-delay, $delay);
+}
+
+@mixin animation-timing-function($function) {
+    @include build-prefix-values(animation-timing-function, $function);
+}
+
+@mixin keyframes($name) {
+    @-webkit-keyframes $name {
+        @content;
+    }
+    @-moz-keyframes $name { 
+        @content;
+    }
+    @-o-keyframes $name { 
+        @content;
+    }
+    @-ms-keyframes $name { 
+        @content;
+    }
+    @keyframes $name { 
+        @content;
+    }
+}
+
+$numberOfSlides: 7;
+$slideDelay: 6;
+
+html, body {
+    height: 100%;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.ie7 body{
+    overflow: hidden;
+}
+
+/* --- */
+
+#slideshow {
+    &, &:after {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0px;
+        left: 0px;
+        z-index: 0;
+    }
+    
+    &:after {
+        content: '';
+/*        background: transparent image-url(pattern.png) repeat top left;*/
+    }
+    
+    li {
+        span { 
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: none;
+            opacity: 0;
+            z-index: 0;
+            @include backface-visibility(hidden);
+            @include animation(imageAnimation #{$numberOfSlides * $slideDelay}s linear infinite 0s);
+        }
+        
+        h2 { 
+            z-index: 1000;
+            position: absolute;
+            bottom: 30px;
+            left: 0px;
+            width: 100%;
+            text-align: center;
+            opacity: 0;
+            color: #fff;
+            @include animation(titleAnimation #{$numberOfSlides * $slideDelay}s linear infinite 0s);
+            font-size: 18px;
+            @include text-shadow;
+        }
+        
+        @for $i from 1 through $numberOfSlides {
+            &:nth-child(#{$i}) {
+                span {
+                    background-image: image-url("#{$i}.jpg");
+                }
+                
+                span, h2 {
+                    @include animation-delay(#{($i - 1) * $slideDelay}s);
+                }
+            }
+        }
+    }
+}
+
+/* Animation for the slideshow images */
+@include keyframes(imageAnimation) {
+    0% { 
+        opacity: 0;
+        @include animation-timing-function(ease-in);
+    }
+    8% { 
+        opacity: 1;
+        @include animation-timing-function(ease-out);
+    }
+    17% { 
+        opacity: 1;
+    }
+    25% { 
+        opacity: 0;
+    }
+    100% { 
+        opacity: 0;
+    }
+}
+
+/* Animation for the title */
+@include keyframes(titleAnimation) { 
+    0% { 
+        opacity: 0;
+    }
+    8% { 
+        opacity: 1;
+    }
+    17% { 
+        opacity: 1;
+    }
+    19% { 
+        opacity: 0;
+    }
+    100% { 
+        opacity: 0;
+    }
+}
+
+/* Show at least something when animations not supported */
+.no-cssanimations #slideshow li span {
+    opacity: 1;
+}
