@@ -10,6 +10,10 @@
     @include build-prefix-values(animation-delay, $delay);
 }
 
+@mixin animation-duration($duration) {
+    @include build-prefix-values(animation-duration, $duration);
+}
+
 @mixin animation-timing-function($function) {
     @include build-prefix-values(animation-timing-function, $function);
 }
@@ -31,9 +35,6 @@
         @content;
     }
 }
-
-$numberOfSlides: 7;
-$slideDelay: 6;
 
 html, body {
     height: 100%;
@@ -95,20 +96,18 @@ body {
             font-size: 18px;
             @include text-shadow;
         }
-        
-        @for $i from 1 through $numberOfSlides {
-            &:nth-child(#{$i}) {
-                span {
-                    background-image: image-url("#{$i}.jpg");
-                }
-                
-                span, h2 {
-                    @include animation-delay(#{($i - 1) * $slideDelay}s);
-                }
+    }
+    
+    @for $i from 1 through 20 {
+        li:nth-child(#{$i}) {
+            span, h2 {
+                @include animation-delay(#{($i - 1) * $slideDelay}s);
             }
         }
     }
 }
+
+
 
 /* Animation for the slideshow images */
 @include keyframes(imageAnimation) {
@@ -116,14 +115,14 @@ body {
         opacity: 0;
         @include animation-timing-function(ease-in);
     }
-    8% { 
+    #{8% * 6 / $numberOfSlides} { 
         opacity: 1;
         @include animation-timing-function(ease-out);
     }
-    17% { 
+    #{17% * 6 / $numberOfSlides} { 
         opacity: 1;
     }
-    25% { 
+    #{25% * 6 / $numberOfSlides} { 
         opacity: 0;
     }
     100% { 
@@ -136,13 +135,13 @@ body {
     0% { 
         opacity: 0;
     }
-    8% { 
+    #{8% * 6 / $numberOfSlides} { 
         opacity: 1;
     }
-    17% { 
+    #{17% * 6 / $numberOfSlides} { 
         opacity: 1;
     }
-    19% { 
+    #{25% * 6 / $numberOfSlides} { 
         opacity: 0;
     }
     100% { 

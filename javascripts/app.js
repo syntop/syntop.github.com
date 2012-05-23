@@ -4,6 +4,31 @@
 
   exports = window;
 
-  $(function() {});
+  Array.prototype.shuffle = function() {
+    return this.sort(function() {
+      return 0.5 - Math.random();
+    });
+  };
+
+  $(function() {
+    var $slideshow;
+    $slideshow = $('#slideshow');
+    return $.getJSON("projects.json", function(_projects) {
+      var $image, $project, $title, i, project, projects, _i, _ref, _results;
+      projects = _projects.shuffle();
+      $slideshow.addClass("size-" + projects.length);
+      _results = [];
+      for (i = _i = 0, _ref = projects.length - 1; 0 <= _ref ? _i <= _ref : _i >= _ref; i = 0 <= _ref ? ++_i : --_i) {
+        project = projects[i];
+        $project = $("<li></li>");
+        $image = $("<span></span>").css('background-image', "url(images/" + project.image + ")");
+        $title = $("<h2>" + project.title + "</h2>");
+        $image.appendTo($project);
+        $title.appendTo($project);
+        _results.push($project.appendTo($slideshow));
+      }
+      return _results;
+    });
+  });
 
 }).call(this);

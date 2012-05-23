@@ -63,7 +63,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 body {
   background: #333;
   color: #CCC;
@@ -74,13 +74,13 @@ body {
   text-align: center;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: #FFF;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 #identity {
   position: absolute;
   width: 6em;
@@ -93,7 +93,7 @@ a {
   margin-left: -3em;
   color: #FFF;
 }
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 #identity .face {
   position: absolute;
   top: 0;
@@ -111,7 +111,7 @@ a {
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px, rgba(0, 0, 0, 0.3) 0px 0px inset;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px, rgba(0, 0, 0, 0.3) 0px 0px inset;
 }
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 #identity #front {
   font-family: Quicksand, serif;
   font-weight: 300;
@@ -120,24 +120,24 @@ a {
   text-rendering: optimizeLegibility;
 }
 
-/* line 38, ../sass/_slideshow.scss */
+/* line 39, ../sass/_slideshow.scss */
 html, body {
   height: 100%;
 }
 
-/* line 42, ../sass/_slideshow.scss */
+/* line 43, ../sass/_slideshow.scss */
 body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-/* line 47, ../sass/_slideshow.scss */
+/* line 48, ../sass/_slideshow.scss */
 .ie7 body {
   overflow: hidden;
 }
 
 /* --- */
-/* line 54, ../sass/_slideshow.scss */
+/* line 55, ../sass/_slideshow.scss */
 #slideshow, #slideshow:after {
   position: fixed;
   width: 100%;
@@ -146,12 +146,12 @@ body {
   left: 0px;
   z-index: 0;
 }
-/* line 63, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow:after {
   content: '';
   /*        background: transparent image-url(pattern.png) repeat top left;*/
 }
-/* line 69, ../sass/_slideshow.scss */
+/* line 70, ../sass/_slideshow.scss */
 #slideshow li span {
   width: 100%;
   height: 100%;
@@ -166,13 +166,13 @@ body {
   z-index: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-animation: imageAnimation 42s linear infinite 0s;
-  -moz-animation: imageAnimation 42s linear infinite 0s;
-  -ms-animation: imageAnimation 42s linear infinite 0s;
-  -o-animation: imageAnimation 42s linear infinite 0s;
-  animation: imageAnimation 42s linear infinite 0s;
+  -webkit-animation: imageAnimation 48s linear infinite 0s;
+  -moz-animation: imageAnimation 48s linear infinite 0s;
+  -ms-animation: imageAnimation 48s linear infinite 0s;
+  -o-animation: imageAnimation 48s linear infinite 0s;
+  animation: imageAnimation 48s linear infinite 0s;
 }
-/* line 85, ../sass/_slideshow.scss */
+/* line 86, ../sass/_slideshow.scss */
 #slideshow li h2 {
   z-index: 1000;
   position: absolute;
@@ -182,19 +182,15 @@ body {
   text-align: center;
   opacity: 0;
   color: #fff;
-  -webkit-animation: titleAnimation 42s linear infinite 0s;
-  -moz-animation: titleAnimation 42s linear infinite 0s;
-  -ms-animation: titleAnimation 42s linear infinite 0s;
-  -o-animation: titleAnimation 42s linear infinite 0s;
-  animation: titleAnimation 42s linear infinite 0s;
+  -webkit-animation: titleAnimation 48s linear infinite 0s;
+  -moz-animation: titleAnimation 48s linear infinite 0s;
+  -ms-animation: titleAnimation 48s linear infinite 0s;
+  -o-animation: titleAnimation 48s linear infinite 0s;
+  animation: titleAnimation 48s linear infinite 0s;
   font-size: 18px;
   text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
 }
-/* line 101, ../sass/_slideshow.scss */
-#slideshow li:nth-child(1) span {
-  background-image: url('/images/1.jpg?1337625999');
-}
-/* line 105, ../sass/_slideshow.scss */
+/* line 103, ../sass/_slideshow.scss */
 #slideshow li:nth-child(1) span, #slideshow li:nth-child(1) h2 {
   -webkit-animation-delay: 0s;
   -moz-animation-delay: 0s;
@@ -202,11 +198,7 @@ body {
   -o-animation-delay: 0s;
   animation-delay: 0s;
 }
-/* line 101, ../sass/_slideshow.scss */
-#slideshow li:nth-child(2) span {
-  background-image: url('/images/2.jpg?1337626043');
-}
-/* line 105, ../sass/_slideshow.scss */
+/* line 103, ../sass/_slideshow.scss */
 #slideshow li:nth-child(2) span, #slideshow li:nth-child(2) h2 {
   -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
@@ -214,11 +206,7 @@ body {
   -o-animation-delay: 6s;
   animation-delay: 6s;
 }
-/* line 101, ../sass/_slideshow.scss */
-#slideshow li:nth-child(3) span {
-  background-image: url('/images/3.jpg?1337626082');
-}
-/* line 105, ../sass/_slideshow.scss */
+/* line 103, ../sass/_slideshow.scss */
 #slideshow li:nth-child(3) span, #slideshow li:nth-child(3) h2 {
   -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
@@ -226,11 +214,7 @@ body {
   -o-animation-delay: 12s;
   animation-delay: 12s;
 }
-/* line 101, ../sass/_slideshow.scss */
-#slideshow li:nth-child(4) span {
-  background-image: url('/images/4.jpg?1337626112');
-}
-/* line 105, ../sass/_slideshow.scss */
+/* line 103, ../sass/_slideshow.scss */
 #slideshow li:nth-child(4) span, #slideshow li:nth-child(4) h2 {
   -webkit-animation-delay: 18s;
   -moz-animation-delay: 18s;
@@ -238,11 +222,7 @@ body {
   -o-animation-delay: 18s;
   animation-delay: 18s;
 }
-/* line 101, ../sass/_slideshow.scss */
-#slideshow li:nth-child(5) span {
-  background-image: url('/images/5.jpg?1337626144');
-}
-/* line 105, ../sass/_slideshow.scss */
+/* line 103, ../sass/_slideshow.scss */
 #slideshow li:nth-child(5) span, #slideshow li:nth-child(5) h2 {
   -webkit-animation-delay: 24s;
   -moz-animation-delay: 24s;
@@ -250,11 +230,7 @@ body {
   -o-animation-delay: 24s;
   animation-delay: 24s;
 }
-/* line 101, ../sass/_slideshow.scss */
-#slideshow li:nth-child(6) span {
-  background-image: url('/images/6.jpg?1337626199');
-}
-/* line 105, ../sass/_slideshow.scss */
+/* line 103, ../sass/_slideshow.scss */
 #slideshow li:nth-child(6) span, #slideshow li:nth-child(6) h2 {
   -webkit-animation-delay: 30s;
   -moz-animation-delay: 30s;
@@ -262,11 +238,7 @@ body {
   -o-animation-delay: 30s;
   animation-delay: 30s;
 }
-/* line 101, ../sass/_slideshow.scss */
-#slideshow li:nth-child(7) span {
-  background-image: url('/images/7.jpg?1337682322');
-}
-/* line 105, ../sass/_slideshow.scss */
+/* line 103, ../sass/_slideshow.scss */
 #slideshow li:nth-child(7) span, #slideshow li:nth-child(7) h2 {
   -webkit-animation-delay: 36s;
   -moz-animation-delay: 36s;
@@ -274,10 +246,114 @@ body {
   -o-animation-delay: 36s;
   animation-delay: 36s;
 }
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(8) span, #slideshow li:nth-child(8) h2 {
+  -webkit-animation-delay: 42s;
+  -moz-animation-delay: 42s;
+  -ms-animation-delay: 42s;
+  -o-animation-delay: 42s;
+  animation-delay: 42s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(9) span, #slideshow li:nth-child(9) h2 {
+  -webkit-animation-delay: 48s;
+  -moz-animation-delay: 48s;
+  -ms-animation-delay: 48s;
+  -o-animation-delay: 48s;
+  animation-delay: 48s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(10) span, #slideshow li:nth-child(10) h2 {
+  -webkit-animation-delay: 54s;
+  -moz-animation-delay: 54s;
+  -ms-animation-delay: 54s;
+  -o-animation-delay: 54s;
+  animation-delay: 54s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(11) span, #slideshow li:nth-child(11) h2 {
+  -webkit-animation-delay: 60s;
+  -moz-animation-delay: 60s;
+  -ms-animation-delay: 60s;
+  -o-animation-delay: 60s;
+  animation-delay: 60s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(12) span, #slideshow li:nth-child(12) h2 {
+  -webkit-animation-delay: 66s;
+  -moz-animation-delay: 66s;
+  -ms-animation-delay: 66s;
+  -o-animation-delay: 66s;
+  animation-delay: 66s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(13) span, #slideshow li:nth-child(13) h2 {
+  -webkit-animation-delay: 72s;
+  -moz-animation-delay: 72s;
+  -ms-animation-delay: 72s;
+  -o-animation-delay: 72s;
+  animation-delay: 72s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(14) span, #slideshow li:nth-child(14) h2 {
+  -webkit-animation-delay: 78s;
+  -moz-animation-delay: 78s;
+  -ms-animation-delay: 78s;
+  -o-animation-delay: 78s;
+  animation-delay: 78s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(15) span, #slideshow li:nth-child(15) h2 {
+  -webkit-animation-delay: 84s;
+  -moz-animation-delay: 84s;
+  -ms-animation-delay: 84s;
+  -o-animation-delay: 84s;
+  animation-delay: 84s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(16) span, #slideshow li:nth-child(16) h2 {
+  -webkit-animation-delay: 90s;
+  -moz-animation-delay: 90s;
+  -ms-animation-delay: 90s;
+  -o-animation-delay: 90s;
+  animation-delay: 90s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(17) span, #slideshow li:nth-child(17) h2 {
+  -webkit-animation-delay: 96s;
+  -moz-animation-delay: 96s;
+  -ms-animation-delay: 96s;
+  -o-animation-delay: 96s;
+  animation-delay: 96s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(18) span, #slideshow li:nth-child(18) h2 {
+  -webkit-animation-delay: 102s;
+  -moz-animation-delay: 102s;
+  -ms-animation-delay: 102s;
+  -o-animation-delay: 102s;
+  animation-delay: 102s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(19) span, #slideshow li:nth-child(19) h2 {
+  -webkit-animation-delay: 108s;
+  -moz-animation-delay: 108s;
+  -ms-animation-delay: 108s;
+  -o-animation-delay: 108s;
+  animation-delay: 108s;
+}
+/* line 103, ../sass/_slideshow.scss */
+#slideshow li:nth-child(20) span, #slideshow li:nth-child(20) h2 {
+  -webkit-animation-delay: 114s;
+  -moz-animation-delay: 114s;
+  -ms-animation-delay: 114s;
+  -o-animation-delay: 114s;
+  animation-delay: 114s;
+}
 
 /* Animation for the slideshow images */
 @-webkit-keyframes imageAnimation {
-  /* line 115, ../sass/_slideshow.scss */
+  /* line 114, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
     -webkit-animation-timing-function: ease-in;
@@ -287,8 +363,8 @@ body {
     animation-timing-function: ease-in;
   }
 
-  /* line 119, ../sass/_slideshow.scss */
-  8% {
+  /* line 118, ../sass/_slideshow.scss */
+  6% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
@@ -297,24 +373,24 @@ body {
     animation-timing-function: ease-out;
   }
 
-  /* line 123, ../sass/_slideshow.scss */
-  17% {
+  /* line 122, ../sass/_slideshow.scss */
+  12.75% {
     opacity: 1;
   }
 
-  /* line 126, ../sass/_slideshow.scss */
-  25% {
+  /* line 125, ../sass/_slideshow.scss */
+  18.75% {
     opacity: 0;
   }
 
-  /* line 129, ../sass/_slideshow.scss */
+  /* line 128, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes imageAnimation {
-  /* line 115, ../sass/_slideshow.scss */
+  /* line 114, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
     -webkit-animation-timing-function: ease-in;
@@ -324,8 +400,8 @@ body {
     animation-timing-function: ease-in;
   }
 
-  /* line 119, ../sass/_slideshow.scss */
-  8% {
+  /* line 118, ../sass/_slideshow.scss */
+  6% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
@@ -334,24 +410,24 @@ body {
     animation-timing-function: ease-out;
   }
 
-  /* line 123, ../sass/_slideshow.scss */
-  17% {
+  /* line 122, ../sass/_slideshow.scss */
+  12.75% {
     opacity: 1;
   }
 
-  /* line 126, ../sass/_slideshow.scss */
-  25% {
+  /* line 125, ../sass/_slideshow.scss */
+  18.75% {
     opacity: 0;
   }
 
-  /* line 129, ../sass/_slideshow.scss */
+  /* line 128, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-o-keyframes imageAnimation {
-  /* line 115, ../sass/_slideshow.scss */
+  /* line 114, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
     -webkit-animation-timing-function: ease-in;
@@ -361,8 +437,8 @@ body {
     animation-timing-function: ease-in;
   }
 
-  /* line 119, ../sass/_slideshow.scss */
-  8% {
+  /* line 118, ../sass/_slideshow.scss */
+  6% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
@@ -371,24 +447,24 @@ body {
     animation-timing-function: ease-out;
   }
 
-  /* line 123, ../sass/_slideshow.scss */
-  17% {
+  /* line 122, ../sass/_slideshow.scss */
+  12.75% {
     opacity: 1;
   }
 
-  /* line 126, ../sass/_slideshow.scss */
-  25% {
+  /* line 125, ../sass/_slideshow.scss */
+  18.75% {
     opacity: 0;
   }
 
-  /* line 129, ../sass/_slideshow.scss */
+  /* line 128, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-ms-keyframes imageAnimation {
-  /* line 115, ../sass/_slideshow.scss */
+  /* line 114, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
     -webkit-animation-timing-function: ease-in;
@@ -398,8 +474,8 @@ body {
     animation-timing-function: ease-in;
   }
 
-  /* line 119, ../sass/_slideshow.scss */
-  8% {
+  /* line 118, ../sass/_slideshow.scss */
+  6% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
@@ -408,24 +484,24 @@ body {
     animation-timing-function: ease-out;
   }
 
-  /* line 123, ../sass/_slideshow.scss */
-  17% {
+  /* line 122, ../sass/_slideshow.scss */
+  12.75% {
     opacity: 1;
   }
 
-  /* line 126, ../sass/_slideshow.scss */
-  25% {
+  /* line 125, ../sass/_slideshow.scss */
+  18.75% {
     opacity: 0;
   }
 
-  /* line 129, ../sass/_slideshow.scss */
+  /* line 128, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes imageAnimation {
-  /* line 115, ../sass/_slideshow.scss */
+  /* line 114, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
     -webkit-animation-timing-function: ease-in;
@@ -435,8 +511,8 @@ body {
     animation-timing-function: ease-in;
   }
 
-  /* line 119, ../sass/_slideshow.scss */
-  8% {
+  /* line 118, ../sass/_slideshow.scss */
+  6% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
@@ -445,17 +521,17 @@ body {
     animation-timing-function: ease-out;
   }
 
-  /* line 123, ../sass/_slideshow.scss */
-  17% {
+  /* line 122, ../sass/_slideshow.scss */
+  12.75% {
     opacity: 1;
   }
 
-  /* line 126, ../sass/_slideshow.scss */
-  25% {
+  /* line 125, ../sass/_slideshow.scss */
+  18.75% {
     opacity: 0;
   }
 
-  /* line 129, ../sass/_slideshow.scss */
+  /* line 128, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
@@ -463,142 +539,142 @@ body {
 
 /* Animation for the title */
 @-webkit-keyframes titleAnimation {
-  /* line 136, ../sass/_slideshow.scss */
+  /* line 135, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 139, ../sass/_slideshow.scss */
-  8% {
+  /* line 138, ../sass/_slideshow.scss */
+  6% {
     opacity: 1;
   }
 
-  /* line 142, ../sass/_slideshow.scss */
-  17% {
+  /* line 141, ../sass/_slideshow.scss */
+  12.75% {
     opacity: 1;
   }
 
-  /* line 145, ../sass/_slideshow.scss */
-  19% {
+  /* line 144, ../sass/_slideshow.scss */
+  18.75% {
     opacity: 0;
   }
 
-  /* line 148, ../sass/_slideshow.scss */
+  /* line 147, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-moz-keyframes titleAnimation {
-  /* line 136, ../sass/_slideshow.scss */
+  /* line 135, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 139, ../sass/_slideshow.scss */
-  8% {
+  /* line 138, ../sass/_slideshow.scss */
+  6% {
     opacity: 1;
   }
 
-  /* line 142, ../sass/_slideshow.scss */
-  17% {
+  /* line 141, ../sass/_slideshow.scss */
+  12.75% {
     opacity: 1;
   }
 
-  /* line 145, ../sass/_slideshow.scss */
-  19% {
+  /* line 144, ../sass/_slideshow.scss */
+  18.75% {
     opacity: 0;
   }
 
-  /* line 148, ../sass/_slideshow.scss */
+  /* line 147, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-o-keyframes titleAnimation {
-  /* line 136, ../sass/_slideshow.scss */
+  /* line 135, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 139, ../sass/_slideshow.scss */
-  8% {
+  /* line 138, ../sass/_slideshow.scss */
+  6% {
     opacity: 1;
   }
 
-  /* line 142, ../sass/_slideshow.scss */
-  17% {
+  /* line 141, ../sass/_slideshow.scss */
+  12.75% {
     opacity: 1;
   }
 
-  /* line 145, ../sass/_slideshow.scss */
-  19% {
+  /* line 144, ../sass/_slideshow.scss */
+  18.75% {
     opacity: 0;
   }
 
-  /* line 148, ../sass/_slideshow.scss */
+  /* line 147, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
 
 @-ms-keyframes titleAnimation {
-  /* line 136, ../sass/_slideshow.scss */
+  /* line 135, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 139, ../sass/_slideshow.scss */
-  8% {
+  /* line 138, ../sass/_slideshow.scss */
+  6% {
     opacity: 1;
   }
 
-  /* line 142, ../sass/_slideshow.scss */
-  17% {
+  /* line 141, ../sass/_slideshow.scss */
+  12.75% {
     opacity: 1;
   }
 
-  /* line 145, ../sass/_slideshow.scss */
-  19% {
+  /* line 144, ../sass/_slideshow.scss */
+  18.75% {
     opacity: 0;
   }
 
-  /* line 148, ../sass/_slideshow.scss */
+  /* line 147, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
 
 @keyframes titleAnimation {
-  /* line 136, ../sass/_slideshow.scss */
+  /* line 135, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
   }
 
-  /* line 139, ../sass/_slideshow.scss */
-  8% {
+  /* line 138, ../sass/_slideshow.scss */
+  6% {
     opacity: 1;
   }
 
-  /* line 142, ../sass/_slideshow.scss */
-  17% {
+  /* line 141, ../sass/_slideshow.scss */
+  12.75% {
     opacity: 1;
   }
 
-  /* line 145, ../sass/_slideshow.scss */
-  19% {
+  /* line 144, ../sass/_slideshow.scss */
+  18.75% {
     opacity: 0;
   }
 
-  /* line 148, ../sass/_slideshow.scss */
+  /* line 147, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
 
 /* Show at least something when animations not supported */
-/* line 154, ../sass/_slideshow.scss */
+/* line 153, ../sass/_slideshow.scss */
 .no-cssanimations #slideshow li span {
   opacity: 1;
 }
