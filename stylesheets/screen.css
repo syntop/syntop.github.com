@@ -166,11 +166,11 @@ body {
   z-index: 0;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-animation: imageAnimation 48s linear infinite 0s;
-  -moz-animation: imageAnimation 48s linear infinite 0s;
-  -ms-animation: imageAnimation 48s linear infinite 0s;
-  -o-animation: imageAnimation 48s linear infinite 0s;
-  animation: imageAnimation 48s linear infinite 0s;
+  -webkit-animation: imageAnimation 60s linear infinite 0s;
+  -moz-animation: imageAnimation 60s linear infinite 0s;
+  -ms-animation: imageAnimation 60s linear infinite 0s;
+  -o-animation: imageAnimation 60s linear infinite 0s;
+  animation: imageAnimation 60s linear infinite 0s;
 }
 /* line 86, ../sass/_slideshow.scss */
 #slideshow li h2 {
@@ -182,11 +182,11 @@ body {
   text-align: center;
   opacity: 0;
   color: #fff;
-  -webkit-animation: titleAnimation 48s linear infinite 0s;
-  -moz-animation: titleAnimation 48s linear infinite 0s;
-  -ms-animation: titleAnimation 48s linear infinite 0s;
-  -o-animation: titleAnimation 48s linear infinite 0s;
-  animation: titleAnimation 48s linear infinite 0s;
+  -webkit-animation: titleAnimation 60s linear infinite 0s;
+  -moz-animation: titleAnimation 60s linear infinite 0s;
+  -ms-animation: titleAnimation 60s linear infinite 0s;
+  -o-animation: titleAnimation 60s linear infinite 0s;
+  animation: titleAnimation 60s linear infinite 0s;
   font-size: 18px;
   text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
 }
@@ -364,7 +364,7 @@ body {
   }
 
   /* line 118, ../sass/_slideshow.scss */
-  6% {
+  4.8% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
@@ -374,12 +374,12 @@ body {
   }
 
   /* line 122, ../sass/_slideshow.scss */
-  12.75% {
+  10.2% {
     opacity: 1;
   }
 
   /* line 125, ../sass/_slideshow.scss */
-  18.75% {
+  15% {
     opacity: 0;
   }
 
@@ -401,7 +401,7 @@ body {
   }
 
   /* line 118, ../sass/_slideshow.scss */
-  6% {
+  4.8% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
@@ -411,12 +411,12 @@ body {
   }
 
   /* line 122, ../sass/_slideshow.scss */
-  12.75% {
+  10.2% {
     opacity: 1;
   }
 
   /* line 125, ../sass/_slideshow.scss */
-  18.75% {
+  15% {
     opacity: 0;
   }
 
@@ -438,7 +438,7 @@ body {
   }
 
   /* line 118, ../sass/_slideshow.scss */
-  6% {
+  4.8% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
@@ -448,12 +448,12 @@ body {
   }
 
   /* line 122, ../sass/_slideshow.scss */
-  12.75% {
+  10.2% {
     opacity: 1;
   }
 
   /* line 125, ../sass/_slideshow.scss */
-  18.75% {
+  15% {
     opacity: 0;
   }
 
@@ -475,7 +475,7 @@ body {
   }
 
   /* line 118, ../sass/_slideshow.scss */
-  6% {
+  4.8% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
@@ -485,12 +485,12 @@ body {
   }
 
   /* line 122, ../sass/_slideshow.scss */
-  12.75% {
+  10.2% {
     opacity: 1;
   }
 
   /* line 125, ../sass/_slideshow.scss */
-  18.75% {
+  15% {
     opacity: 0;
   }
 
@@ -512,7 +512,7 @@ body {
   }
 
   /* line 118, ../sass/_slideshow.scss */
-  6% {
+  4.8% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
@@ -522,12 +522,12 @@ body {
   }
 
   /* line 122, ../sass/_slideshow.scss */
-  12.75% {
+  10.2% {
     opacity: 1;
   }
 
   /* line 125, ../sass/_slideshow.scss */
-  18.75% {
+  15% {
     opacity: 0;
   }
 
@@ -545,17 +545,17 @@ body {
   }
 
   /* line 138, ../sass/_slideshow.scss */
-  6% {
+  4.8% {
     opacity: 1;
   }
 
   /* line 141, ../sass/_slideshow.scss */
-  12.75% {
+  10.2% {
     opacity: 1;
   }
 
   /* line 144, ../sass/_slideshow.scss */
-  18.75% {
+  15% {
     opacity: 0;
   }
 
@@ -572,17 +572,17 @@ body {
   }
 
   /* line 138, ../sass/_slideshow.scss */
-  6% {
+  4.8% {
     opacity: 1;
   }
 
   /* line 141, ../sass/_slideshow.scss */
-  12.75% {
+  10.2% {
     opacity: 1;
   }
 
   /* line 144, ../sass/_slideshow.scss */
-  18.75% {
+  15% {
     opacity: 0;
   }
 
@@ -599,17 +599,17 @@ body {
   }
 
   /* line 138, ../sass/_slideshow.scss */
-  6% {
+  4.8% {
     opacity: 1;
   }
 
   /* line 141, ../sass/_slideshow.scss */
-  12.75% {
+  10.2% {
     opacity: 1;
   }
 
   /* line 144, ../sass/_slideshow.scss */
-  18.75% {
+  15% {
     opacity: 0;
   }
 
@@ -626,17 +626,17 @@ body {
   }
 
   /* line 138, ../sass/_slideshow.scss */
-  6% {
+  4.8% {
     opacity: 1;
   }
 
   /* line 141, ../sass/_slideshow.scss */
-  12.75% {
+  10.2% {
     opacity: 1;
   }
 
   /* line 144, ../sass/_slideshow.scss */
-  18.75% {
+  15% {
     opacity: 0;
   }
 
@@ -653,17 +653,17 @@ body {
   }
 
   /* line 138, ../sass/_slideshow.scss */
-  6% {
+  4.8% {
     opacity: 1;
   }
 
   /* line 141, ../sass/_slideshow.scss */
-  12.75% {
+  10.2% {
     opacity: 1;
   }
 
   /* line 144, ../sass/_slideshow.scss */
-  18.75% {
+  15% {
     opacity: 0;
   }
 
