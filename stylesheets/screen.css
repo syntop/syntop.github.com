@@ -1,4 +1,4 @@
-/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,51 +15,51 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
+  font-size: 100%;
   vertical-align: baseline;
 }
 
-/* line 20, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-body {
+/* line 22, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
   line-height: 1;
 }
 
-/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 101, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 114, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.1/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+/* line 116, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
@@ -69,6 +69,7 @@ body {
   color: #CCC;
   font-family: Lato, sans-serif;
   font-weight: 300;
+  -moz-perspective: 500;
   -webkit-perspective: 500;
   perspective: 500;
   text-align: center;
@@ -101,14 +102,12 @@ a {
   width: 100%;
   height: 100%;
   border: 1px solid #FFF;
-  -webkit-border-radius: 3em;
   -moz-border-radius: 3em;
-  -ms-border-radius: 3em;
-  -o-border-radius: 3em;
+  -webkit-border-radius: 3em;
   border-radius: 3em;
-  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px, rgba(0, 0, 0, 0.3) 0px 0px inset;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px, rgba(0, 0, 0, 0.3) 0px 0px inset;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px, rgba(0, 0, 0, 0.3) 0px 0px inset;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px, rgba(0, 0, 0, 0.3) 0px 0px inset;
 }
 /* line 60, ../sass/screen.scss */
@@ -120,24 +119,24 @@ a {
   text-rendering: optimizeLegibility;
 }
 
-/* line 39, ../sass/_slideshow.scss */
+/* line 1, ../sass/_slideshow.scss */
 html, body {
   height: 100%;
 }
 
-/* line 43, ../sass/_slideshow.scss */
+/* line 5, ../sass/_slideshow.scss */
 body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-/* line 48, ../sass/_slideshow.scss */
+/* line 10, ../sass/_slideshow.scss */
 .ie7 body {
   overflow: hidden;
 }
 
 /* --- */
-/* line 55, ../sass/_slideshow.scss */
+/* line 17, ../sass/_slideshow.scss */
 #slideshow, #slideshow:after {
   position: fixed;
   width: 100%;
@@ -146,12 +145,11 @@ body {
   left: 0px;
   z-index: 0;
 }
-/* line 64, ../sass/_slideshow.scss */
+/* line 26, ../sass/_slideshow.scss */
 #slideshow:after {
   content: '';
-  /*        background: transparent image-url(pattern.png) repeat top left;*/
 }
-/* line 70, ../sass/_slideshow.scss */
+/* line 31, ../sass/_slideshow.scss */
 #slideshow li span {
   width: 100%;
   height: 100%;
@@ -164,15 +162,14 @@ body {
   background-repeat: none;
   opacity: 0;
   z-index: 0;
+  -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -webkit-animation: imageAnimation 60s linear infinite 0s;
   -moz-animation: imageAnimation 60s linear infinite 0s;
-  -ms-animation: imageAnimation 60s linear infinite 0s;
-  -o-animation: imageAnimation 60s linear infinite 0s;
+  -webkit-animation: imageAnimation 60s linear infinite 0s;
   animation: imageAnimation 60s linear infinite 0s;
 }
-/* line 86, ../sass/_slideshow.scss */
+/* line 47, ../sass/_slideshow.scss */
 #slideshow li h2 {
   z-index: 1000;
   position: absolute;
@@ -182,499 +179,253 @@ body {
   text-align: center;
   opacity: 0;
   color: #fff;
-  -webkit-animation: titleAnimation 60s linear infinite 0s;
   -moz-animation: titleAnimation 60s linear infinite 0s;
-  -ms-animation: titleAnimation 60s linear infinite 0s;
-  -o-animation: titleAnimation 60s linear infinite 0s;
+  -webkit-animation: titleAnimation 60s linear infinite 0s;
   animation: titleAnimation 60s linear infinite 0s;
   font-size: 18px;
-  text-shadow: rgba(0, 0, 0, 0.3) 0px 1px 1px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(1) span, #slideshow li:nth-child(1) h2 {
-  -webkit-animation-delay: 0s;
   -moz-animation-delay: 0s;
-  -ms-animation-delay: 0s;
-  -o-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(2) span, #slideshow li:nth-child(2) h2 {
-  -webkit-animation-delay: 6s;
   -moz-animation-delay: 6s;
-  -ms-animation-delay: 6s;
-  -o-animation-delay: 6s;
+  -webkit-animation-delay: 6s;
   animation-delay: 6s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(3) span, #slideshow li:nth-child(3) h2 {
-  -webkit-animation-delay: 12s;
   -moz-animation-delay: 12s;
-  -ms-animation-delay: 12s;
-  -o-animation-delay: 12s;
+  -webkit-animation-delay: 12s;
   animation-delay: 12s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(4) span, #slideshow li:nth-child(4) h2 {
-  -webkit-animation-delay: 18s;
   -moz-animation-delay: 18s;
-  -ms-animation-delay: 18s;
-  -o-animation-delay: 18s;
+  -webkit-animation-delay: 18s;
   animation-delay: 18s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(5) span, #slideshow li:nth-child(5) h2 {
-  -webkit-animation-delay: 24s;
   -moz-animation-delay: 24s;
-  -ms-animation-delay: 24s;
-  -o-animation-delay: 24s;
+  -webkit-animation-delay: 24s;
   animation-delay: 24s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(6) span, #slideshow li:nth-child(6) h2 {
-  -webkit-animation-delay: 30s;
   -moz-animation-delay: 30s;
-  -ms-animation-delay: 30s;
-  -o-animation-delay: 30s;
+  -webkit-animation-delay: 30s;
   animation-delay: 30s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(7) span, #slideshow li:nth-child(7) h2 {
-  -webkit-animation-delay: 36s;
   -moz-animation-delay: 36s;
-  -ms-animation-delay: 36s;
-  -o-animation-delay: 36s;
+  -webkit-animation-delay: 36s;
   animation-delay: 36s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(8) span, #slideshow li:nth-child(8) h2 {
-  -webkit-animation-delay: 42s;
   -moz-animation-delay: 42s;
-  -ms-animation-delay: 42s;
-  -o-animation-delay: 42s;
+  -webkit-animation-delay: 42s;
   animation-delay: 42s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(9) span, #slideshow li:nth-child(9) h2 {
-  -webkit-animation-delay: 48s;
   -moz-animation-delay: 48s;
-  -ms-animation-delay: 48s;
-  -o-animation-delay: 48s;
+  -webkit-animation-delay: 48s;
   animation-delay: 48s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(10) span, #slideshow li:nth-child(10) h2 {
-  -webkit-animation-delay: 54s;
   -moz-animation-delay: 54s;
-  -ms-animation-delay: 54s;
-  -o-animation-delay: 54s;
+  -webkit-animation-delay: 54s;
   animation-delay: 54s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(11) span, #slideshow li:nth-child(11) h2 {
-  -webkit-animation-delay: 60s;
   -moz-animation-delay: 60s;
-  -ms-animation-delay: 60s;
-  -o-animation-delay: 60s;
+  -webkit-animation-delay: 60s;
   animation-delay: 60s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(12) span, #slideshow li:nth-child(12) h2 {
-  -webkit-animation-delay: 66s;
   -moz-animation-delay: 66s;
-  -ms-animation-delay: 66s;
-  -o-animation-delay: 66s;
+  -webkit-animation-delay: 66s;
   animation-delay: 66s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(13) span, #slideshow li:nth-child(13) h2 {
-  -webkit-animation-delay: 72s;
   -moz-animation-delay: 72s;
-  -ms-animation-delay: 72s;
-  -o-animation-delay: 72s;
+  -webkit-animation-delay: 72s;
   animation-delay: 72s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(14) span, #slideshow li:nth-child(14) h2 {
-  -webkit-animation-delay: 78s;
   -moz-animation-delay: 78s;
-  -ms-animation-delay: 78s;
-  -o-animation-delay: 78s;
+  -webkit-animation-delay: 78s;
   animation-delay: 78s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(15) span, #slideshow li:nth-child(15) h2 {
-  -webkit-animation-delay: 84s;
   -moz-animation-delay: 84s;
-  -ms-animation-delay: 84s;
-  -o-animation-delay: 84s;
+  -webkit-animation-delay: 84s;
   animation-delay: 84s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(16) span, #slideshow li:nth-child(16) h2 {
-  -webkit-animation-delay: 90s;
   -moz-animation-delay: 90s;
-  -ms-animation-delay: 90s;
-  -o-animation-delay: 90s;
+  -webkit-animation-delay: 90s;
   animation-delay: 90s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(17) span, #slideshow li:nth-child(17) h2 {
-  -webkit-animation-delay: 96s;
   -moz-animation-delay: 96s;
-  -ms-animation-delay: 96s;
-  -o-animation-delay: 96s;
+  -webkit-animation-delay: 96s;
   animation-delay: 96s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(18) span, #slideshow li:nth-child(18) h2 {
-  -webkit-animation-delay: 102s;
   -moz-animation-delay: 102s;
-  -ms-animation-delay: 102s;
-  -o-animation-delay: 102s;
+  -webkit-animation-delay: 102s;
   animation-delay: 102s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(19) span, #slideshow li:nth-child(19) h2 {
-  -webkit-animation-delay: 108s;
   -moz-animation-delay: 108s;
-  -ms-animation-delay: 108s;
-  -o-animation-delay: 108s;
+  -webkit-animation-delay: 108s;
   animation-delay: 108s;
 }
-/* line 103, ../sass/_slideshow.scss */
+/* line 64, ../sass/_slideshow.scss */
 #slideshow li:nth-child(20) span, #slideshow li:nth-child(20) h2 {
-  -webkit-animation-delay: 114s;
   -moz-animation-delay: 114s;
-  -ms-animation-delay: 114s;
-  -o-animation-delay: 114s;
+  -webkit-animation-delay: 114s;
   animation-delay: 114s;
 }
 
 /* Animation for the slideshow images */
-@-webkit-keyframes imageAnimation {
-  /* line 114, ../sass/_slideshow.scss */
-  0% {
-    opacity: 0;
-    -webkit-animation-timing-function: ease-in;
-    -moz-animation-timing-function: ease-in;
-    -ms-animation-timing-function: ease-in;
-    -o-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  /* line 118, ../sass/_slideshow.scss */
-  4.8% {
-    opacity: 1;
-    -webkit-animation-timing-function: ease-out;
-    -moz-animation-timing-function: ease-out;
-    -ms-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-
-  /* line 122, ../sass/_slideshow.scss */
-  10.2% {
-    opacity: 1;
-  }
-
-  /* line 125, ../sass/_slideshow.scss */
-  15% {
-    opacity: 0;
-  }
-
-  /* line 128, ../sass/_slideshow.scss */
-  100% {
-    opacity: 0;
-  }
-}
-
 @-moz-keyframes imageAnimation {
-  /* line 114, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
-    -webkit-animation-timing-function: ease-in;
     -moz-animation-timing-function: ease-in;
-    -ms-animation-timing-function: ease-in;
-    -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-
-  /* line 118, ../sass/_slideshow.scss */
   4.8% {
     opacity: 1;
-    -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
-    -ms-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-
-  /* line 122, ../sass/_slideshow.scss */
   10.2% {
     opacity: 1;
   }
-
-  /* line 125, ../sass/_slideshow.scss */
   15% {
     opacity: 0;
   }
-
-  /* line 128, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
-
-@-o-keyframes imageAnimation {
-  /* line 114, ../sass/_slideshow.scss */
+@-webkit-keyframes imageAnimation {
   0% {
     opacity: 0;
     -webkit-animation-timing-function: ease-in;
-    -moz-animation-timing-function: ease-in;
-    -ms-animation-timing-function: ease-in;
-    -o-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-
-  /* line 118, ../sass/_slideshow.scss */
   4.8% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
-    -moz-animation-timing-function: ease-out;
-    -ms-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-
-  /* line 122, ../sass/_slideshow.scss */
   10.2% {
     opacity: 1;
   }
-
-  /* line 125, ../sass/_slideshow.scss */
   15% {
     opacity: 0;
   }
-
-  /* line 128, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
-
-@-ms-keyframes imageAnimation {
-  /* line 114, ../sass/_slideshow.scss */
-  0% {
-    opacity: 0;
-    -webkit-animation-timing-function: ease-in;
-    -moz-animation-timing-function: ease-in;
-    -ms-animation-timing-function: ease-in;
-    -o-animation-timing-function: ease-in;
-    animation-timing-function: ease-in;
-  }
-
-  /* line 118, ../sass/_slideshow.scss */
-  4.8% {
-    opacity: 1;
-    -webkit-animation-timing-function: ease-out;
-    -moz-animation-timing-function: ease-out;
-    -ms-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
-  }
-
-  /* line 122, ../sass/_slideshow.scss */
-  10.2% {
-    opacity: 1;
-  }
-
-  /* line 125, ../sass/_slideshow.scss */
-  15% {
-    opacity: 0;
-  }
-
-  /* line 128, ../sass/_slideshow.scss */
-  100% {
-    opacity: 0;
-  }
-}
-
 @keyframes imageAnimation {
-  /* line 114, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
-    -webkit-animation-timing-function: ease-in;
     -moz-animation-timing-function: ease-in;
-    -ms-animation-timing-function: ease-in;
-    -o-animation-timing-function: ease-in;
+    -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-
-  /* line 118, ../sass/_slideshow.scss */
   4.8% {
     opacity: 1;
-    -webkit-animation-timing-function: ease-out;
     -moz-animation-timing-function: ease-out;
-    -ms-animation-timing-function: ease-out;
-    -o-animation-timing-function: ease-out;
+    -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-
-  /* line 122, ../sass/_slideshow.scss */
   10.2% {
     opacity: 1;
   }
-
-  /* line 125, ../sass/_slideshow.scss */
   15% {
     opacity: 0;
   }
-
-  /* line 128, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
-
 /* Animation for the title */
-@-webkit-keyframes titleAnimation {
-  /* line 135, ../sass/_slideshow.scss */
-  0% {
-    opacity: 0;
-  }
-
-  /* line 138, ../sass/_slideshow.scss */
-  4.8% {
-    opacity: 1;
-  }
-
-  /* line 141, ../sass/_slideshow.scss */
-  10.2% {
-    opacity: 1;
-  }
-
-  /* line 144, ../sass/_slideshow.scss */
-  11.4% {
-    opacity: 0;
-  }
-
-  /* line 147, ../sass/_slideshow.scss */
-  100% {
-    opacity: 0;
-  }
-}
-
 @-moz-keyframes titleAnimation {
-  /* line 135, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
   }
-
-  /* line 138, ../sass/_slideshow.scss */
   4.8% {
     opacity: 1;
   }
-
-  /* line 141, ../sass/_slideshow.scss */
   10.2% {
     opacity: 1;
   }
-
-  /* line 144, ../sass/_slideshow.scss */
   11.4% {
     opacity: 0;
   }
-
-  /* line 147, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
-
-@-o-keyframes titleAnimation {
-  /* line 135, ../sass/_slideshow.scss */
+@-webkit-keyframes titleAnimation {
   0% {
     opacity: 0;
   }
-
-  /* line 138, ../sass/_slideshow.scss */
   4.8% {
     opacity: 1;
   }
-
-  /* line 141, ../sass/_slideshow.scss */
   10.2% {
     opacity: 1;
   }
-
-  /* line 144, ../sass/_slideshow.scss */
   11.4% {
     opacity: 0;
   }
-
-  /* line 147, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
-
-@-ms-keyframes titleAnimation {
-  /* line 135, ../sass/_slideshow.scss */
-  0% {
-    opacity: 0;
-  }
-
-  /* line 138, ../sass/_slideshow.scss */
-  4.8% {
-    opacity: 1;
-  }
-
-  /* line 141, ../sass/_slideshow.scss */
-  10.2% {
-    opacity: 1;
-  }
-
-  /* line 144, ../sass/_slideshow.scss */
-  11.4% {
-    opacity: 0;
-  }
-
-  /* line 147, ../sass/_slideshow.scss */
-  100% {
-    opacity: 0;
-  }
-}
-
 @keyframes titleAnimation {
-  /* line 135, ../sass/_slideshow.scss */
   0% {
     opacity: 0;
   }
-
-  /* line 138, ../sass/_slideshow.scss */
   4.8% {
     opacity: 1;
   }
-
-  /* line 141, ../sass/_slideshow.scss */
   10.2% {
     opacity: 1;
   }
-
-  /* line 144, ../sass/_slideshow.scss */
   11.4% {
     opacity: 0;
   }
-
-  /* line 147, ../sass/_slideshow.scss */
   100% {
     opacity: 0;
   }
 }
-
 /* Show at least something when animations not supported */
-/* line 153, ../sass/_slideshow.scss */
+/* line 114, ../sass/_slideshow.scss */
 .no-cssanimations #slideshow li span {
   opacity: 1;
 }
