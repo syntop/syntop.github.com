@@ -1,4 +1,4 @@
-/* line 5, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -165,9 +165,9 @@ body {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -moz-animation: imageAnimation 60s linear infinite 0s;
-  -webkit-animation: imageAnimation 60s linear infinite 0s;
-  animation: imageAnimation 60s linear infinite 0s;
+  -moz-animation: imageAnimation 84s linear infinite 0s;
+  -webkit-animation: imageAnimation 84s linear infinite 0s;
+  animation: imageAnimation 84s linear infinite 0s;
 }
 /* line 47, ../sass/_slideshow.scss */
 #slideshow li h2 {
@@ -179,9 +179,9 @@ body {
   text-align: center;
   opacity: 0;
   color: #fff;
-  -moz-animation: titleAnimation 60s linear infinite 0s;
-  -webkit-animation: titleAnimation 60s linear infinite 0s;
-  animation: titleAnimation 60s linear infinite 0s;
+  -moz-animation: titleAnimation 84s linear infinite 0s;
+  -webkit-animation: titleAnimation 84s linear infinite 0s;
+  animation: titleAnimation 84s linear infinite 0s;
   font-size: 18px;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
@@ -313,15 +313,15 @@ body {
     -moz-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  4.8% {
+  3.42857% {
     opacity: 1;
     -moz-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-  10.2% {
+  7.28571% {
     opacity: 1;
   }
-  15% {
+  10.71429% {
     opacity: 0;
   }
   100% {
@@ -334,15 +334,15 @@ body {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  4.8% {
+  3.42857% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-  10.2% {
+  7.28571% {
     opacity: 1;
   }
-  15% {
+  10.71429% {
     opacity: 0;
   }
   100% {
@@ -356,16 +356,16 @@ body {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  4.8% {
+  3.42857% {
     opacity: 1;
     -moz-animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-  10.2% {
+  7.28571% {
     opacity: 1;
   }
-  15% {
+  10.71429% {
     opacity: 0;
   }
   100% {
@@ -377,13 +377,13 @@ body {
   0% {
     opacity: 0;
   }
-  4.8% {
+  3.42857% {
     opacity: 1;
   }
-  10.2% {
+  7.28571% {
     opacity: 1;
   }
-  11.4% {
+  8.14286% {
     opacity: 0;
   }
   100% {
@@ -394,13 +394,13 @@ body {
   0% {
     opacity: 0;
   }
-  4.8% {
+  3.42857% {
     opacity: 1;
   }
-  10.2% {
+  7.28571% {
     opacity: 1;
   }
-  11.4% {
+  8.14286% {
     opacity: 0;
   }
   100% {
@@ -411,13 +411,13 @@ body {
   0% {
     opacity: 0;
   }
-  4.8% {
+  3.42857% {
     opacity: 1;
   }
-  10.2% {
+  7.28571% {
     opacity: 1;
   }
-  11.4% {
+  8.14286% {
     opacity: 0;
   }
   100% {
