@@ -8,16 +8,12 @@
         "image": "smed-guide.jpg"
     }, 
     {
-        "title": "MRZ Cottbus",
-        "image": "mrz-cottbus.jpg"
-    },
-    {
-        "title": "Horticulture Exhibition",
+        "title": "Stadt Land Garten",
         "image": "slg-exhibition.jpg"
     },
     {
-        "title": "Sound Machines",
-        "image": "sound-machines.jpg"
+        "title": "MRZ Cottbus",
+        "image": "mrz-cottbus.jpg"
     },
     {
         "title": "Game Milestones",
@@ -26,6 +22,10 @@
     {
         "title": "SOL",
         "image": "sol.jpg"
+    },
+    {
+        "title": "Sound Machines",
+        "image": "sound-machines.jpg"
     },
     {
         "title": "Rube Goldberg Processor",

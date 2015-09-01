@@ -15,7 +15,7 @@
     $slideshow = $('#slideshow');
     return $.getJSON("projects.json", function(_projects) {
       var $image, $project, $title, i, j, project, projects, ref, results;
-      projects = _projects.shuffle();
+      //projects = _projects.shuffle();
       $slideshow.addClass("size-" + projects.length);
       results = [];
       for (i = j = 0, ref = projects.length - 1; 0 <= ref ? j <= ref : j >= ref; i = 0 <= ref ? ++j : --j) {
