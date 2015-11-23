@@ -165,9 +165,9 @@ body {
   -moz-backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  -moz-animation: imageAnimation 84s linear infinite 0s;
-  -webkit-animation: imageAnimation 84s linear infinite 0s;
-  animation: imageAnimation 84s linear infinite 0s;
+  -moz-animation: imageAnimation 90s linear infinite 0s;
+  -webkit-animation: imageAnimation 90s linear infinite 0s;
+  animation: imageAnimation 90s linear infinite 0s;
 }
 /* line 47, ../sass/_slideshow.scss */
 #slideshow li h2 {
@@ -179,9 +179,9 @@ body {
   text-align: center;
   opacity: 0;
   color: #fff;
-  -moz-animation: titleAnimation 84s linear infinite 0s;
-  -webkit-animation: titleAnimation 84s linear infinite 0s;
-  animation: titleAnimation 84s linear infinite 0s;
+  -moz-animation: titleAnimation 90s linear infinite 0s;
+  -webkit-animation: titleAnimation 90s linear infinite 0s;
+  animation: titleAnimation 90s linear infinite 0s;
   font-size: 18px;
   text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
@@ -313,15 +313,15 @@ body {
     -moz-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  3.42857% {
+  3.2% {
     opacity: 1;
     -moz-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-  7.28571% {
+  6.8% {
     opacity: 1;
   }
-  10.71429% {
+  10% {
     opacity: 0;
   }
   100% {
@@ -334,15 +334,15 @@ body {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  3.42857% {
+  3.2% {
     opacity: 1;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-  7.28571% {
+  6.8% {
     opacity: 1;
   }
-  10.71429% {
+  10% {
     opacity: 0;
   }
   100% {
@@ -356,16 +356,16 @@ body {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  3.42857% {
+  3.2% {
     opacity: 1;
     -moz-animation-timing-function: ease-out;
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-  7.28571% {
+  6.8% {
     opacity: 1;
   }
-  10.71429% {
+  10% {
     opacity: 0;
   }
   100% {
@@ -377,13 +377,13 @@ body {
   0% {
     opacity: 0;
   }
-  3.42857% {
+  3.2% {
     opacity: 1;
   }
-  7.28571% {
+  6.8% {
     opacity: 1;
   }
-  8.14286% {
+  7.6% {
     opacity: 0;
   }
   100% {
@@ -394,13 +394,13 @@ body {
   0% {
     opacity: 0;
   }
-  3.42857% {
+  3.2% {
     opacity: 1;
   }
-  7.28571% {
+  6.8% {
     opacity: 1;
   }
-  8.14286% {
+  7.6% {
     opacity: 0;
   }
   100% {
@@ -411,13 +411,13 @@ body {
   0% {
     opacity: 0;
   }
-  3.42857% {
+  3.2% {
     opacity: 1;
   }
-  7.28571% {
+  6.8% {
     opacity: 1;
   }
-  8.14286% {
+  7.6% {
     opacity: 0;
   }
   100% {
