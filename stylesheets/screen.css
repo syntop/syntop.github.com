@@ -76,12 +76,33 @@ body {
 }
 
 /* line 25, ../sass/screen.scss */
+#social {
+  position: relative;
+  margin-top: 10px;
+  z-index: 1;
+  font-size: 110%;
+  text-shadow: black 0px 0px 10px;
+}
+/* line 29, ../sass/screen.scss */
+#social li {
+  display: inline;
+  padding-right: 1%;
+}
+/* line 31, ../sass/screen.scss */
+#social li i {
+  color: white;
+  font-weight: bold;
+  padding-right: 4px;
+  display: inline-block;
+}
+
+/* line 45, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: #FFF;
 }
 
-/* line 30, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 #identity {
   position: absolute;
   width: 6em;
@@ -94,7 +115,7 @@ a {
   margin-left: -3em;
   color: #FFF;
 }
-/* line 45, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 #identity .face {
   position: absolute;
   top: 0;
@@ -110,7 +131,7 @@ a {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 1px, rgba(0, 0, 0, 0.3) 0px 0px inset;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 1px, rgba(0, 0, 0, 0.3) 0px 0px inset;
 }
-/* line 60, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 #identity #front {
   font-family: Quicksand, serif;
   font-weight: 300;

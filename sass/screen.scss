@@ -22,6 +22,26 @@ body {
     text-align: center;
 }
 
+#social {
+    position:relative;
+    margin-top: 10px;
+    z-index: 1;
+    li {
+        display: inline;
+        i {
+            color: white;
+            font-weight: bold;
+            padding-right: 4px;
+            display: inline-block;
+        }
+        padding-right: 1%;
+    }
+    font-size: 110%;
+    @include text-shadow(rgba(black, 1.0) 0px 0px 10px);
+
+
+}
+
 a {
     text-decoration: none;
     color: #FFF;
