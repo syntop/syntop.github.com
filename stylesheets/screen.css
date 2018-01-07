@@ -78,7 +78,7 @@ body {
 /* line 25, ../sass/screen.scss */
 #social {
   position: relative;
-  margin-top: 10px;
+  padding-top: 10px;
   z-index: 1;
   font-size: 110%;
   text-shadow: black 0px 0px 10px;
