@@ -75,6 +75,28 @@ body {
   text-align: center;
 }
 
+section {
+  text-align: left;
+  margin: 40px 0 0 40px;
+}
+
+section h2 {
+  font-size: 32px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+#imprint {
+  position: absolute;
+  bottom:0;
+  left:0;
+  padding: 20px;
+  font-size: 110%;
+  text-shadow: black 0px 0px 10px;
+}
+
 /* line 25, ../sass/screen.scss */
 #social {
   position: relative;
