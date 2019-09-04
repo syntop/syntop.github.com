@@ -1,46 +1,627 @@
+
 <!doctype html>
-<html lang="de">
-<head>
+<html lang="en">
+  <head>
     <meta charset="utf-8">
-    <title>SYNTOP</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Design studio for digital, interactive and participatory media based in Berlin">
-    <meta name="keywords" content="interaction design, new media, generative design, exhibition design, interactive, interactive installation, installation, art, participation, participatory, syntop, studio, berlin">
-    <script src="javascripts/modernizr.min.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Lato:300,700|Quicksand:300" rel="stylesheet" type="text/css">
-    <link href="stylesheets/screen.css" rel="stylesheet" type="text/css">
-    <script src="https://use.fontawesome.com/e360031026.js"></script>
-</head>
-<body>
+
+    <!-- Always force latest IE rendering engine -->
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Syntop</title>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Work+Sans:100,200,300,400,500,600,700" rel="stylesheet"> 
+
+    <link href="stylesheets/normalize.css" rel="stylesheet" type="text/css" /><link href="stylesheets/all.css" rel="stylesheet" type="text/css" />
+    <script src="javascripts/jquery-2.1.3.min.js" type="text/javascript"></script><script src="javascripts/modernizr.js" type="text/javascript"></script><script src="javascripts/respond.min.js" type="text/javascript"></script><script src="javascripts/jquery.scrollify.min.js" type="text/javascript"></script><script src="javascripts/lang.js" type="text/javascript"></script>
+
+    <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="keywords" lang="en" content="media design, generative design, interaction design, user experience design, new media, exhibition design, interactive exhibits, information design, digital transformation
+">
+    <meta name="keywords" lang="de" content="mediengestaltung, generative gestaltung, interaktionsdesign, new media, exhibition design, ausstellungsdesign, interaktive exponate, interactive exhibits, information design, informationsdesign, digitale transformation
+">
+    <!--TODO description-->
+          <meta name="description" lang="en" content="Studio for Interaction and Information Design"/>
+          <meta name="description" lang="de" content="Studio für Interaktions- und Informationsdesign"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    
+  </head>
+
+  <body class="index">
+    <script src="javascripts/index.js" type="text/javascript"></script><script src="javascripts/slideshow.js" type="text/javascript"></script>
 
 
-    <div id="identity">
-        <div id="circle">
-            <div id="front" class="face">
-                <h1><a href="mailto:hello@syntop.io">SYNTOP</a></h1>
-            </div>
-        </div>
 
+<div id="overlay"></div>
+<div id="background" class="show" data-image=images/blurred_syntop-slides-intro-0.JPG></div>
+<div id="contentcontainers">
+	<section id="syntop">
+		<div class="content" data-section-name="testimonial_0">
+			<div class="contactcontainer">
+				<div id="opencontact" class="opencontact button open underlined show">
+					<p lang="de">Kontakt</p>
+					<p lang="en">Contact</p>
+				</div>
+				<div id="closecontact" class="closecontact button close hide">
+					<span class="underlined" lang="de">Schließen</span>
+					<span class="underlined" lang="en">Close</span>
+				</div>
+			<div class="contact close">
+				<div class="icons">
+					<div>
+						<a href="https://goo.gl/maps/2jFB3cCR1912" target="blank"><i class="icon fa fa-map-marker"></i></a>
+						<br/><br/>
+					</div>
+					<a href="mailto:hello@syntop.io"><i class="icon fa fa-envelope"></i></a>
+					<i class="icon fa fa-phone"></i>
+					<i class="icon fa fa-twitter"></i>
+					<i class="icon fa fa-instagram"></i>
+				</div>
+				<!--TODO contact block responsiveness  -->
+				<div class="vcard">
+				    <div class="adr">
+						<div>
+							<span class="street-address">Danneckerstraße 10</span><br/>
+							<span class="postal-code">10245</span>
+							<span class="locality">Berlin</span>
+						</div>
+				    	<a class="email" href="mailto:hello@syntop.io">hello@syntop.io</a>
+				    	<a class="tel" href="tel:+49 30 60988352-0">+49 30 60988352-0</a>
+				    	<a href="https://www.twitter.com/syntopio">@syntopio</a>
+				    	<a href="https://www.instagram.com/studio_syntop/">@studio_syntop</a>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!--TODO: logo responsiveness. make it responsive.  -->
+			<div class="logocontainer centered">
+			<div class="logo">
+				<h1 class="type-quicksand">SYNTOP</h1>
+			</div>
+			<h1 class="subline" lang="en">Studio for Interaction and Information Design</h1>
+			<h1 class="subline" lang="de">Studio für Interaktions- und Informationsdesign</h1>
+			</div>
 
-    </div>
-    <ul id="slideshow"></ul>
-    <ul id="social">
-        <li>
-            <a href="https://instagram.com/studio_syntop">
-                <i class="fa fa-instagram" aria-hidden="true"></i>Instagram
-            </a>
-        </li>
-        <li>
-            <a href="https://twitter.com/syntopio">
-                <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
-            </a>
-        </li>
-        <li><a href="https://vimeo.com/syntop"><i class="fa fa-vimeo" aria-hidden="true"></i>Vimeo</a>
-        </li>
-    </ul>
-    <a id="imprint" href="./imprint.html">Imprint</a>
+			<div id="hint">
+				<div class="scroll-btn anim-fade show" data-target="#learnmore">
+					<span lang="en">Learn more</span>
+					<span lang="de">Mehr</span>
+					<br/>
+					<i class="fa fa-angle-down"></i></div>
+					<div class="scroll-btn anim-fade show"  data-target="#projects">
+						<span lang="en">See all projects</span>
+						<span lang="de">Projekte ansehen</span>
+						<br/><i class="fa fa-angle-down"></i></div>
+			</div>
 
-        <script src="javascripts/jquery.min.js"></script>
-        <script src="javascripts/app.js"></script>
-    </body>
-    </html>
+			<div id="backtotop" class="">
+				<div class="scroll-btn" data-section-name="title"><i class="fa fa-angle-up"></i></div>
+			</div>
+		</div>
+	</section>
+	<section id="learnmore">
+				<article class="content" data-section-name="testimonial_1">
+					<h2 class="centered" lang="en">We design formats for communication and narration in engaging, interactive, playful and immersive ways.
+</h2>
+					<h2 class="centered" lang="de">Wir gestalten ansprechende, interaktive, spielerische und immersive Formate zur Vermittlung und Erzählung. 
+</h2>
+				</article>
+				<article class="content" data-section-name="testimonial_2">
+					<h2 class="centered" lang="en">In close cooperation with our partners and clients from culture, economy and education we conceive, design and implement graphics, apps, objects, installations and spaces, which persist in the analog and the digital world.
+</h2>
+					<h2 class="centered" lang="de">In enger Kooperation mit unseren Auftraggebern und Partnern aus Kultur, Wirtschaft und Bildung konzipieren, entwerfen und realisieren wir Grafiken, Apps, Objekte, Installationen und Räume, welche in der analogen und der digitalen Welt bestehen.
+</h2>
+				</article>
+				<article class="content" data-section-name="testimonial_3">
+					<h2 class="centered" lang="en">Research, workshops, experiments, sketches, information architecture, prototypes, interface design, product design, engineering, software development.
+Matching the content, our creative process applies many methods and techniques.
+</h2>
+					<h2 class="centered" lang="de">Recherche, Workshops, Experimente, Skizzen, Informationsarchitektur, Prototypen, Produktdesign, Konstruktion, Interface Design, Softwareentwicklung. 
+In unserem kreativen Prozess nutzen wir dem Inhalt entsprechende Methoden und Techniken.
+</h2>
+				</article>
+	</section>
+	<!--TODO weird fullscreen behaviour on mobile  -->
+	<nav class="content" data-section-name="testimonial_4" data-hide-slideshow="true">
+		<ul id="projects" class="pure-g">
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="wiz.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-wiz-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Forest of wolves</h5>
+						<h6 lang="en">Wolves and humans in coexistence
+</h6>
+						<h5 lang="de">Wolfswald</h5>
+						<h6 lang="de">Zusammenleben von Wolf und Mensch
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="project-mounga.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-project-mounga-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Project Mounga</h5>
+						<h6 lang="en">Trap pests, save birds
+</h6>
+						<h5 lang="de">Project Mounga</h5>
+						<h6 lang="de">Schädlinge fangen, Vögel retten
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="make-your-school.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-make-your-school-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Make Your School</h5>
+						<h6 lang="en">Digital literacy in schools
+</h6>
+						<h5 lang="de">Make Your School</h5>
+						<h6 lang="de">Digitale Bildung an Schulen
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="sartorius-installations.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-sartorius-installations-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">50 of 150 interactive</h5>
+						<h6 lang="en">Unternehmensprozesse erfahrbar machen
+</h6>
+						<h5 lang="de">50 aus 150 interaktiv</h5>
+						<h6 lang="de">Unternehmensprozesse erfahrbar machen
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="global-desk.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-global-desk-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Global Desk</h5>
+						<h6 lang="en">Global data in local context
+</h6>
+						<h5 lang="de">Global Desk</h5>
+						<h6 lang="de">Globale Daten im lokalen Kontext
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="archistoire-app.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-archistoire-app-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Archistoire</h5>
+						<h6 lang="en">On an interactive discovery tour
+</h6>
+						<h5 lang="de">Archistoire</h5>
+						<h6 lang="de">Auf interaktiver Entdeckungstour
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="poetry-2017.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-poetry-2017-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Material Poetry</h5>
+						<h6 lang="en">Texts as collages of objects
+</h6>
+						<h5 lang="de">Material Poetry</h5>
+						<h6 lang="de">Texte als Collagen aus Objekten
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="speer-experten.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-speer-experten-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Waiting Experts</h5>
+						<h6 lang="en">Sitting down with historians
+</h6>
+						<h5 lang="de">Wartende Experten</h5>
+						<h6 lang="de">Mit Historikern an einem Tisch sitzen
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="speer-lebenstonband.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-speer-lebenstonband-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Lebenstonband</h5>
+						<h6 lang="en">Entering the constructed self-portrait of Albert Speer
+</h6>
+						<h5 lang="de">Lebenstonband</h5>
+						<h6 lang="de">Albert Speers konstruiertes Selbstbild betreten
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="memory-project-installation.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-memory-project-installation-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Memory Project @ CHB</h5>
+						<h6 lang="en">Memories and Documents are merged in one place
+</h6>
+						<h5 lang="de">Memory Project @ CHB</h5>
+						<h6 lang="de">Erinnerungen und Dokumente verschmelzen im Raum
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="datev-generative-illustrations.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-datev-generative-illustrations-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Business Development</h5>
+						<h6 lang="en">Dynamic development, dynamic form
+</h6>
+						<h5 lang="de">Geschäftsentwicklung</h5>
+						<h6 lang="de">Dynamische Entwicklung, dynamische Form
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="messe-frankfurt-2015-app.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-messe-frankfurt-2015-app-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Market Atlas App</h5>
+						<h6 lang="en">Augmenting printed information
+</h6>
+						<h5 lang="de">Marktatlas App</h5>
+						<h6 lang="de">Gedruckte Information und digitale Erweiterung
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="messe-frankfurt-2015.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-messe-frankfurt-2015-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Data Landscapes</h5>
+						<h6 lang="en">Topics which shape a country
+</h6>
+						<h5 lang="de">Datenlandschaften</h5>
+						<h6 lang="de">Themen, die ein Land formen
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="nutzgarten-vermittlung.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-nutzgarten-vermittlung-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Stadt, Land, Garten</h5>
+						<h6 lang="en">Discovering gardening hands-on
+</h6>
+						<h5 lang="de">Stadt, Land, Garten</h5>
+						<h6 lang="de">Die Geschichte des Gartens hands-on entdecken
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="poetry-2016.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-poetry-2016-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Understanding of Texts</h5>
+						<h6 lang="en">Analog-generative text visualization
+</h6>
+						<h5 lang="de">Textverständnis</h5>
+						<h6 lang="de">Analog-generative Textvisualisierung
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="woollaa.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-woollaa-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Woollaa ShareSchal</h5>
+						<h6 lang="en">Generative design and fashion industry 4.0
+</h6>
+						<h5 lang="de">Woollaa ShareSchal</h5>
+						<h6 lang="de">Generative Gestaltung und Modeindustrie 4.0
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="deutsche-israelis-dialog-der-dinge.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-deutsche-israelis-dialog-der-dinge-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Dialog of Things</h5>
+						<h6 lang="en">We are what we have in our pockets
+</h6>
+						<h5 lang="de">Dialog der Dinge</h5>
+						<h6 lang="de">Wir sind, was wir in den Taschen haben
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="deutsche-israelis-medieninstallation.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-deutsche-israelis-medieninstallation-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Germans & Israelis</h5>
+						<h6 lang="en">History and everday life
+</h6>
+						<h5 lang="de">Deutsche & Israelis</h5>
+						<h6 lang="de">Geschichte und Alltag
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="messe-frankfurt-2014.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-messe-frankfurt-2014-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Ways</h5>
+						<h6 lang="en">Connections, visualized
+</h6>
+						<h5 lang="de">Wege</h5>
+						<h6 lang="de">Visualisierte Verbindungen
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="nutzgarten-hydroponik.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-nutzgarten-hydroponik-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Nutzgarten Hydroponik</h5>
+						<h6 lang="en">Build something to understand and explain it
+</h6>
+						<h5 lang="de">Nutzgarten Hydroponik</h5>
+						<h6 lang="de">Etwas bauen, um es zu verstehen und zu erklären
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="poetry-2015.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-poetry-2015-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Voice Recognition</h5>
+						<h6 lang="en">Voices, computers and emotions
+</h6>
+						<h5 lang="de">Spracherkennung</h5>
+						<h6 lang="de">Stimme, Computer und Emotionen
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="smed-archiv.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-smed-archiv-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">A Window to the Archive</h5>
+						<h6 lang="en">Discovering objects in an archive
+</h6>
+						<h5 lang="de">Fenster ins Archiv</h5>
+						<h6 lang="de">Objekte im Archiv entdecken
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="smed-lupe.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-smed-lupe-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Multimedia Lens App</h5>
+						<h6 lang="en">Wander through the history of medical technology
+</h6>
+						<h5 lang="de">Mediale Lupe App</h5>
+						<h6 lang="de">Die Geschichte der Medizintechnik erkunden
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="smed-weltweit.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-smed-weltweit-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Siemens Weltweit</h5>
+						<h6 lang="en">Factory tour around the world
+</h6>
+						<h5 lang="de">Siemens Weltweit</h5>
+						<h6 lang="de">Werksführung um die Welt
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="messe-frankfurt-2013.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-messe-frankfurt-2013-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Dialogues</h5>
+						<h6 lang="en">Many conversations paint a picture
+</h6>
+						<h5 lang="de">Dialoge</h5>
+						<h6 lang="de">Viele Konversationen formen ein Bild
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="poetry-2014.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-poetry-2014-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Emotional Shapes</h5>
+						<h6 lang="en">How do you feel about this text?
+</h6>
+						<h5 lang="de">Emotional Shapes</h5>
+						<h6 lang="de">Wie fühlen Sie sich beim Lesen des Textes?
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="mrz-modell.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-mrz-modell-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">MRZ Projection mapping</h5>
+						<h6 lang="en">The past as a layer over the present
+</h6>
+						<h5 lang="de">MRZ Projection Mapping</h5>
+						<h6 lang="de">Die Vergangenheit legt sich über die Gegenwart
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="mrz-vermittlungskonzept.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-mrz-vermittlungskonzept-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">MRZ Vermittlungskonzept</h5>
+						<h6 lang="en">Communication through participation and interaction</h6>
+						<h5 lang="de">MRZ Vermittlungskonzept</h5>
+						<h6 lang="de">Kommunikation durch Partizipation und Interaktion</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="messe-frankfurt-2012-impulses.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-messe-frankfurt-2012-impulses-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Impulses</h5>
+						<h6 lang="en">Business figures as forces
+</h6>
+						<h5 lang="de">Impulse</h5>
+						<h6 lang="de">Geschäftszahlen als Kräfte
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="soundmachines.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-soundmachines-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">Soundmachines</h5>
+						<h6 lang="en">Interactive object for a performance.
+</h6>
+						<h5 lang="de">Soundmachines</h5>
+						<h6 lang="de">Interaktives Objekt für eine Performance
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="game-milestones.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-game-milestones-thumb.JPG ></div>
+					<div class="description">
+						<h5 lang="en">Game Milestones</h5>
+						<h6 lang="en">A digital cursor selects physical objects
+</h6>
+						<h5 lang="de">Game Milestones</h5>
+						<h6 lang="de">Ein digitaler Cursor im Raum
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="sol.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-sol-thumb.jpg ></div>
+					<div class="description">
+						<h5 lang="en">SOL</h5>
+						<h6 lang="en">Into the sun, pushing atoms
+</h6>
+						<h5 lang="de">SOL</h5>
+						<h6 lang="de">In die Sonne, Atome bewegen
+</h5>
+					</div>
+					</a>
+				</li>
+				<li class="pure-u-1-1 pure-u-sm-1-2 pure-u-md-1-2 pure-u-lg-1-3 pure-u-xl-1-3">
+					<a href="die-quelle.html" class="project-link">
+					<div class="thumb" data-image=images/syntop-die-quelle-thumb.jpeg ></div>
+					<div class="description">
+						<h5 lang="en">Die Quelle</h5>
+						<h6 lang="en">Contemplating substainability
+</h6>
+						<h5 lang="de">Die Quelle</h5>
+						<h6 lang="de">Über Nachhaltigkeit nachdenken
+</h5>
+					</div>
+					</a>
+				</li>
+		</ul>
+	</nav>
+
+	<footer>
+    	<a href="/imprint.html" lang="de">
+  <p>SYNTOP 2018</p>
+  <p>Impressum / Datenschutzerklärung</p>
+</a>
+<a href="/imprint.html" lang="en">
+  <p>SYNTOP 2018</p>
+  <p>Legal Disclaimer / Data Privacy Statement </p>
+</a>
+
+	</footer>
+
+</div>
+<div id="slideshow" class="hide" >
+	<div class="slide" data-image= images/syntop-slides-intro-0.JPG data-type= testimonial_0 ></div>
+	<div class="slide" data-image= images/syntop-slides-intro-1.JPG data-type= testimonial_0 ></div>
+	<div class="slide" data-image= images/syntop-slides-intro-2.jpg data-type= testimonial_0 ></div>
+	<div class="slide" data-image= images/syntop-slides-studio-0.jpg data-type= testimonial_1 ></div>
+	<div class="slide" data-image= images/syntop-slides-studio-1.JPG data-type= testimonial_1 ></div>
+	<div class="slide" data-image= images/syntop-slides-studio-2.JPG data-type= testimonial_1 ></div>
+	<div class="slide" data-image= images/syntop-slides-products-0.jpg data-type= testimonial_2 ></div>
+	<div class="slide" data-image= images/syntop-slides-products-1.JPG data-type= testimonial_2 ></div>
+	<div class="slide" data-image= images/syntop-slides-products-2.jpg data-type= testimonial_2 ></div>
+	<div class="slide" data-image= images/syntop-slides-process-0.JPG data-type= testimonial_3 ></div>
+	<div class="slide" data-image= images/syntop-slides-process-1.jpg data-type= testimonial_3 ></div>
+	<div class="slide" data-image= images/syntop-slides-process-2.JPG data-type= testimonial_3 ></div>
+</div>
+<ul class="language-switch">
+	<li class="en" lang="en" tlan="de">
+		<span>en</span><span class="inactive">de</span>
+	</li>
+	<li class="de" lang="de" tlan="en">
+		<span class="inactive">en</span><span>de</span></a>
+	</li>
+</ul>
+<!--TODO: imprint  -->
+
+  </body>
+
+</html>
