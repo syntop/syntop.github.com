@@ -19,24 +19,52 @@ $( document ).ready(function() {
         $('iframe').addClass('show');
     });
 
-    var videos = $("video");
+
+    let isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    var videoElements = $("video");
+    videoElements.each(function(i, v) {
+        if (!isIOS) {
+            v.onloadeddata = function (ref) {
+                v.play()
+                .then()
+                .catch(
+                    function() {
+                        v.controls=true;
+                    }
+                );
+            }
+        } else {
+            //v.controls = true;
+            v.play();
+        }
+    });
+
+    // if (!isIOS) {
     var i = setInterval(
         function() {
             var numLoaded = 0;
-            videos.each(function(i, v) {
+            videoElements.each(function(i, v) {
                 if (v.readyState == 4) {
                     numLoaded++;
                 }
             });
-            console.log("Loaded: "+numLoaded+" / "+videos.length);
-            if (numLoaded == videos.length) {
-                grid.imagesLoaded().progress( function() {
-                    grid.masonry('layout');
-                    $('#images').removeClass('hide').addClass('show');
-                });
+            console.log("Loaded: "+numLoaded+" / "+videoElements.length);
+            if (numLoaded == videoElements.length) {
+               grid.imagesLoaded().progress( function() {
+                   grid.masonry('layout');
+                   $('#images').removeClass('hide').addClass('show');
+               });
                 clearInterval(i);
             }
             console.log("Videos ready");
         }, 200
     );
+    // } else {
+    //     grid.imagesLoaded().progress( function() {
+    //        grid.masonry('layout');
+    //        $('#images').removeClass('hide').addClass('show');
+    //     });
+    // }
+
 });

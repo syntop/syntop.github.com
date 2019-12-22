@@ -1,3 +1,7 @@
+function playVideo() {
+    console.log("play video");
+}
+
 $( document ).ready(function() {
     var slideshow = undefined;
 
